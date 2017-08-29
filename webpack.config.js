@@ -3,8 +3,8 @@ var path = require('path');
 module.exports = {
 	entry: './src/app/index.js',
 	output: {
-		path: path.resolve(__dirname, './src/app/index.js'),
-		filename: 'transpiled.js'
+		path: path.resolve(__dirname, './src/'),
+		filename: 'bundle.min.js'
 	},
 	module: {
 		loaders:[
