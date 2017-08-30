@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Gotham Light";
+  font-weight: lighter;
+  src: url("../fonts/Gotham_Rounded_Light.otf") format("opentype"); }
+@font-face {
+  font-family: "Gotham Book";
+  font-weight: 500;
+  src: url("../fonts/Gotham_Rounded_Book.ttf") format("opentype"); }
+@font-face {
+  font-family: "Gotham Bold";
+  font-weight: 900;
+  src: url("../fonts/Gotham_Rounded_Bold.ttf") format("opentype"); }
+
+
+
+$Primary-solid: #1ebb04;
+$Secondary-solid: #0071d0;																																																					
+$Disable-solid: #aeaeae;																																																					
+$Danger-solid: #ff1e00;																																																					
+
+
+
+
+.button-ui{
+	border: 0;
+	border-radius: 15px;
+	padding: 20;
+	color: #fff;
+
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+
+.button-primary{
+	@extend .button-ui;
+	background-color: $button-primary;
+}
+

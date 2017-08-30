@@ -1,0 +1,24 @@
+$button-primary: green;
+$button-disable: gray;																																																					
+$button-primary-hover: green * 1.5;
+
+
+
+
+.button-ui{
+	border: 0;
+	border-radius: 15px;
+	padding: 20;
+	color: #fff;
+
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+
+.button-primary{
+	@extend .button-ui;
+	background-color: $button-primary;
+}
+
