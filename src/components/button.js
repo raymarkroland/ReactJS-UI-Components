@@ -1,5 +1,6 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
+// import FontAwesome from 'react-fontawesome';
+import './main.css';
 
 
 const buttons =() => {
