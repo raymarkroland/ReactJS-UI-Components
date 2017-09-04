@@ -1,18 +1,22 @@
 import React from 'react';
 // import FontAwesome from 'react-fontawesome';
+
+// import ReactDOM from 'react-dom';
+
+// import { RippleButton } from 'react-ripple-effect';
 import './main.css';
 
 
 const buttons =() => {
 	return(
 		<div>
-			  <h4>Primary Buttons</h4>
+			  <h5>Primary Buttons</h5>
 	          <button className="Primary-btn-solid">Primary</button>
-	          <h4>Secondary Buttons</h4>
+	          <h5>Secondary Buttons</h5>
 	          <button className="Secondary-btn-solid">Secondary</button>
-	          <h4>Disable Buttons</h4>
+	          <h5>Disable Buttons</h5>
 	          <button className="Disable-btn-solid">Disable</button>
-	          <h4>Danger Buttons</h4>
+	          <h5>Danger Buttons</h5>
 	          <button className="Danger-btn-solid">Danger</button>
 		</div>
 	)
@@ -25,31 +29,35 @@ export default buttons;
 // class buttons extends React.Component {
 // 	constructor(){
 // 		super();
-// 		this.onClick = this.onClick.bind(this)
+// 		this.state = {
+// 			cursorPos: {}
+// 		}
 // 	}
 
 
-// 	onClick () {
-// 		this.state({ clickCount: this.state.clickCount + 1 })
-// 	}
+// 	handleClick(e) {
+// 		let cursorPos = {
+// 			top: e.clientY,
+// 			left: e.clientX,
 
+// 			time: Date.now()
+// 		}
+
+// 		this.setState({cursorPos: cursorPos})
+// 	}
 
 
 // 	render(){
 // 		return(
-// 			<div className="container">
-// 	        	<h4>Primary Buttons</h4>
-//          		<button
-//          		className="Primary-btn-solid"
-//          		onClick={this.onClick}
-//          		label={'Primary' + this.state.clickCount}
-//          		></button>
-//           		<h4>Secondary Buttons</h4>
-// 	            <button className="Secondary-btn-solid">Secondary</button>
-//           		<h4>Disable Buttons</h4>
-//           		<button className="Disable-btn-solid">Disable</button>
-//           		<h4>Danger Buttons</h4>
-// 	      		<button className="Danger-btn-solid">Danger</button>
+// 			<div>
+// 			  <h5>Primary Buttons</h5>
+// 	          <button className="Primary-btn-solid">Primary</button>
+// 	          <h5>Secondary Buttons</h5>
+// 	          <button className="Secondary-btn-solid">Secondary</button>
+// 	          <h5>Disable Buttons</h5>
+// 	          <button className="Disable-btn-solid">Disable</button>
+// 	          <h5>Danger Buttons</h5>
+// 	          <button className="Danger-btn-solid">Danger</button>
 // 			</div>
 // 		)
 // 	}

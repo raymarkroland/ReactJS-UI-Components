@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --content-base src/",
-    "build-css": "./node_modules/node-sass/bin/node-sass src/ -o src/"
+    "build-css": "node-sass src/ -o src/"
   },
   "author": "Ray Mark",
   "license": "ISC",
@@ -25,6 +25,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.7",
     "node-sass": "^4.5.3",
+    "react-ripple-effect": "^1.0.4",
     "style-loader": "^0.18.2",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"

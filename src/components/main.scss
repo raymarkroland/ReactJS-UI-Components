@@ -1,24 +1,66 @@
-$button-primary: green;
-$button-disable: gray;																																																					
-$button-primary-hover: green * 1.5;
 
 
+
+
+// Solid Background colours variable
+$button-primary: #00c35c;
+$button-secondary: #00ba99;
+$button-disable: #ccc;		
+$button-danger: #ff4040;																																																			
+
+
+
+
+h5{
+	font-family: "Gotham Normal", sans-serif;
+}
+
+
+
+.lbl-title{
+	padding: 20px;
+	background-color: #f0f0f0;
+	font-family: "Gotham Normal", sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	width: 100%;
+}
+.padding-remove{
+	padding: 0 !important;
+}
 
 
 .button-ui{
 	border: 0;
-	border-radius: 15px;
-	padding: 20;
+	border-radius: 5px;
+	padding: 15px 0;
 	color: #fff;
-
-	font-family: "Roboto", sans-serif;
+	width: 150px;
+	font-family: "Gotham Normal", sans-serif;
 	font-weight: normal;
 	font-size: 1em;
 }
-
-
-.button-primary{
-	@extend .button-ui;
-	background-color: $button-primary;
+.button-ui:hover, .button-ui:focus{
+	outline: 0;
 }
 
+
+
+
+
+.Primary-btn-solid{
+	background-color: $button-primary;
+	@extend .button-ui;
+}
+.Secondary-btn-solid{
+	background-color: $button-secondary;
+	@extend .button-ui;
+}
+.Disable-btn-solid{
+	background-color: $button-disable;
+	@extend .button-ui;
+}
+.Danger-btn-solid{
+	background-color: $button-danger;
+	@extend .button-ui;
+}

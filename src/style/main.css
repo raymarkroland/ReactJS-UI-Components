@@ -2,115 +2,22 @@
   font-family: "Gotham Light";
   font-weight: lighter;
   src: url("../fonts/Gotham_Rounded_Light.otf") format("opentype"); }
+
 @font-face {
   font-family: "Gotham Book";
   font-weight: 500;
   src: url("../fonts/Gotham_Rounded_Book.ttf") format("opentype"); }
+
 @font-face {
   font-family: "Gotham Bold";
   font-weight: 900;
   src: url("../fonts/Gotham_Rounded_Bold.ttf") format("opentype"); }
 
-
-*{
-	padding: 0;
-	margin: 0;
-}
-.padding-remove{
-	padding: 0 !important;
-}
-h4{
-	font-family: "Gotham Book", sans-serif;
-	font-size: 1em;
-}
-.lbl-title{
-	width: 100%;
-	padding: 20px;
-	background-color: #f0f0f0;
-	font-family: 'Gotham Book', sans-serif;
-	font-weight: normal;
-	font-size: 2em;
-	color: #666;
-	margin-bottom: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Primary-btn-solid{
-	background-color: #1ebb04;
-
-	padding: 15px 20px;
-	width: 150px;
-	border-radius: 5px;
-	border: 0;
-
-	font-family: "Gotham Book", sans-serif;
-	font-weight: normal;
-	font-size: .9em;
-	color: #fff;
-}
-.Secondary-btn-solid{
-	background-color: #0071d0;
-
-	padding: 15px 20px;
-	width: 150px;
-	border-radius: 5px;
-	border: 1px solid #0071d0;
-
-	font-family: "Gotham Book", sans-serif;
-	font-weight: normal;
-	font-size: .9em;
-	color: #fff;
-}
-.Disable-btn-solid{
-	background-color: #aeaeae;
-
-	padding: 15px 20px;
-	width: 150px;
-	border-radius: 5px;
-	border: 1px solid #aeaeae;
-
-	font-family: "Gotham Book", sans-serif;
-	font-weight: normal;
-	font-size: .9em;
-	color: #666;
-}
-.Danger-btn-solid{
-	background-color: #ff1e00;
-
-	padding: 15px 20px;
-	width: 150px;
-	border-radius: 5px;
-	border: 1px solid #ff1e00;
-
-	font-family: "Gotham Book", sans-serif;
-	font-weight: normal;
-	font-size: .9em;
-	color: #fff;
-}
-.Primary-btn-solid:hover,
-.Primary-btn-solid:focus,
-.Secondary-btn-solid:hover,
-.Secondary-btn-solid:focus,
-.Disable-btn-solid:hover,
-.Disable-btn-solid:focus,
-.Danger-btn-solid:hover,
-.Danger-btn-solid:focus{
-	outline: 0;
-
-}
+.button-ui, .button-primary {
+  border: 0;
+  border-radius: 15px;
+  padding: 20;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 1em; }
