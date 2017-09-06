@@ -1,8 +1,5 @@
 import React from 'react';
 // import FontAwesome from 'react-fontawesome';
-
-// import ReactDOM from 'react-dom';
-
 // import { RippleButton } from 'react-ripple-effect';
 import './main.css';
 
@@ -10,19 +7,32 @@ import './main.css';
 const buttons =() => {
 	return(
 		<div>
-			  <h5>Primary Buttons</h5>
+			<div className="col-lg-6 col-md-6 col-sm-12 col-xs12">
+			  <h5>Primary Normal Buttons</h5>
 	          <button className="Primary-btn-solid">Primary</button>
-	          <h5>Secondary Buttons</h5>
+	          <h5>Secondary Normal Buttons</h5>
 	          <button className="Secondary-btn-solid">Secondary</button>
-	          <h5>Disable Buttons</h5>
+	          <h5>Disable Normal Buttons</h5>
 	          <button className="Disable-btn-solid">Disable</button>
-	          <h5>Danger Buttons</h5>
+	          <h5>Danger Normal Buttons</h5>
 	          <button className="Danger-btn-solid">Danger</button>
+	        </div> 
+	        <div className="col-lg-6 col-md-6 col-sm-12 col-xs12">
+	          <h5>Primary No Fill Buttons</h5>
+	          <button className="Primary-btn-NoFill">Primary</button>
+	          <h5>Secondary No Fill Buttons</h5>
+	          <button className="Secondary-btn-NoFill">Secondary</button>
+	          <h5>Disable No Fill Buttons</h5>
+	          <button className="Disable-btn-NoFill">Disable</button>
+	          <h5>Danger No Fill Buttons</h5>
+	          <button className="Danger-btn-NoFill">Danger</button>
+	         </div>	
 		</div>
 	)
 }
 
 export default buttons;
+
 
 
 

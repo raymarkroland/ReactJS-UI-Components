@@ -4,6 +4,7 @@ import { render } from 'react-dom';
 import PropTypes from 'prop-types';
 
 import ButtonComponents from '../components/button-components';
+import RadioAndCheckbox from '../components/radio-and-checkbox-components';
 
 
  
@@ -17,7 +18,9 @@ render(
 			<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<ButtonComponents/>
 			</div>	
-			<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">2</div>	
+			<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<RadioAndCheckbox/>
+			</div>	
 		</div>
 	</div>
 	</div>	
