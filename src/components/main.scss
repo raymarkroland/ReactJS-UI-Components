@@ -1,6 +1,37 @@
+$body-bg: #fff;
 
+// Shadows
+$shadow-inset: inset 0 2px 2px 0 rgba(0,0,0,.14);
+$shadow-0: 0 0 1px rgba(0, 0, 0, 0);
+$shadow-2: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+$shadow-3: 0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.2),0 1px 8px 0 rgba(0,0,0,.12);
+$shadow-4: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+$shadow-6: 0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12),0 3px 5px -1px rgba(0,0,0,.2);
+$shadow-8: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12),0 5px 5px -3px rgba(0,0,0,.2);
 
+// Font Sizes
+$mf-font-size: 1rem !default;
+$mf-active-font-size: $mf-font-size * 0.8 !default;
+$mf-active-top: -$mf-font-size !default;
 
+// Margin & Paddings
+$mf-gap: $mf-font-size * 1.5 !default;
+$mf-spacer: $mf-font-size / 8 !default;
+$mf-fieldset-margin: 0 0 $mf-gap * 2 !default;
+$mf-checkbox-gap: $mf-font-size * 2 !default;
+$mf-checkbox-top: 0 !default;
+$mf-radio-margin: $mf-font-size / -4 !default;
+
+// Colors
+$mf-input-color: #333 !default;
+$mf-border-color: #999 !default;
+$mf-label-color: lighten($mf-border-color, 10%) !default;
+$mf-active-color: darken($mf-border-color, 10%) !default;
+$mf-focus-color: #337ab7 !default;
+$mf-error-color: #d9534f !default;
+
+// Animation
+$mf-transition-speed: 0.28s !default;
 
 // Colours palette variable
 $button-primary: #00c35c;
@@ -11,12 +42,14 @@ $button-danger: #ff4040;
 
 
 
+
+
+
+
+
 h5{
 	font-family: "Gotham Normal", sans-serif;
 }
-
-
-
 .lbl-title{
 	padding: 20px;
 	background-color: #f0f0f0;
@@ -30,6 +63,20 @@ h5{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Button design components
 .button-ui{
 	border: 2px solid;
 	border-radius: 5px;
@@ -42,10 +89,6 @@ h5{
 .button-ui:hover, .button-ui:focus{
 	outline: 0;
 }
-
-
-
-
 
 .Primary-btn-solid{
 	background-color: $button-primary;
@@ -67,7 +110,6 @@ h5{
 	@extend .button-ui;
 	color: #fff;
 }
-
 
 // No Fill BUttons
 .Primary-btn-NoFill{
@@ -106,54 +148,19 @@ h5{
 
 
 
-$body-bg: #fff;
 
 
-// Shadows
-$shadow-inset: inset 0 2px 2px 0 rgba(0,0,0,.14);
-$shadow-0: 0 0 1px rgba(0, 0, 0, 0);
-$shadow-2: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-$shadow-3: 0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.2),0 1px 8px 0 rgba(0,0,0,.12);
-$shadow-4: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
-$shadow-6: 0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12),0 3px 5px -1px rgba(0,0,0,.2);
-$shadow-8: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12),0 5px 5px -3px rgba(0,0,0,.2);
 
-// Font Sizes
-$mf-font-size: 1rem !default;
-$mf-active-font-size: $mf-font-size * 0.8 !default;
-$mf-active-top: -$mf-font-size !default;
 
-// Margin & Paddings
-$mf-gap: $mf-font-size * 1.5 !default;
-$mf-spacer: $mf-font-size / 8 !default;
-$mf-fieldset-margin: 0 0 $mf-gap * 2 !default;
-$mf-checkbox-gap: $mf-font-size * 2 !default;
-$mf-checkbox-top: 0 !default;
-$mf-radio-margin: $mf-font-size / -4 !default;
 
-// Colors
-$mf-input-color: #333 !default;
-$mf-border-color: #999 !default;
-$mf-label-color: lighten($mf-border-color, 10%) !default;
-$mf-active-color: darken($mf-border-color, 10%) !default;
-$mf-focus-color: #337ab7 !default;
-$mf-error-color: #d9534f !default;
 
-// Animation
-$mf-transition-speed: 0.28s !default;
 
-body,
-input,
-body * {
-	font-family: 'Roboto', sans-serif;
-	box-sizing: border-box;
 
-	&::after,
-	&::before {
-		box-sizing: border-box;
-	}
-}
 
+
+
+
+// Radio & Checkedbox design Components
 .form-radio,
 .form-group {
 	position: relative;
@@ -260,14 +267,15 @@ body * {
 
 			~ .control-label {
 				color: $mf-focus-color;
-			}
+			} 
 
 			~ .bar {
-        border-color: $mf-focus-color;
+        		border-color: $mf-focus-color;
 			}
 		}
 	}
 }
+
 
 // Radio & Checkbox
 .checkbox,
@@ -279,6 +287,7 @@ body * {
 		text-align: left;
 		color: $mf-input-color;
 		display: block;
+		font-family: "Gotham", sans-serif;
 	}
 
 	input {
@@ -495,4 +504,134 @@ body * {
 	&:focus {
 		outline: none;
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SearchBar design component
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1em;
+  border: 1px solid #D0CFCE;
+  font-family: "Gotham Book", sans-serif;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: $mf-transition-speed;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity $mf-transition-speed; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity $mf-transition-speed; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity $mf-transition-speed; 
+  	 opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 50px;
+  height: 50px;
+  top: -50px;
+  right: 0;
+}
+
+
+
+
+
+
+//Input fields design components
+// Effect Styles Start Here
+%label-movement {
+  // Move up, colorize and shrink
+  font-size: 0.75em;
+  color: #8e44ad;
+  top: -2.25rem;
+  transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+}
+
+.styled-input {
+  float: left;
+  width: 33.3333%;
+  margin: 2rem 0 1rem;
+  position: relative;
+  label {
+    color: #999;
+    padding: 1rem;
+    position: absolute;
+    font-family: "Gotham Book", sans-serif;
+    top: 0;    
+    left: 0;
+    transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+    pointer-events: none;
+  }
+  &.wide {
+    // Full width textarea fields
+    width: 100%;
+  }
+}
+
+input, textarea {
+  padding: 1rem 1rem;
+  border: 0; 
+  width: 100%;
+  font-size: 1rem;
+  ~ span {
+    // Border Effect
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #8e44ad;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+  }
+  &:focus {
+    // Trigger the effects
+    outline: 0;
+	  ~ label {
+      // Move Label
+      @extend %label-movement;
+  	}
+    ~ span {
+      // Expand across
+      width: 100%;
+      transition: $mf-transition-speed cubic-bezier(0.2, 0, 0.03, 1);
+    }
+	}
+  &:valid ~ label/*, &.not-empty ~ label*/ {
+    // Keep label above field after its filled out
+    @extend %label-movement;
+  }
+}
+
+textarea {
+  // Mods needed for multiline inputs
+  width: 100%;
+  min-height: 15em;
 }

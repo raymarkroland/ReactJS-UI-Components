@@ -15,7 +15,6 @@ class RadioCheckbox extends React.Component{
 		return(
 			<div className='row'>
 				<RadioAndCheckbox/>
-					
 			</div>
 		)
 	}

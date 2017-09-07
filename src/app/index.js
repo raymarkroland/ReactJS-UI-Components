@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 
 import ButtonComponents from '../components/button-components';
 import RadioAndCheckbox from '../components/radio-and-checkbox-components';
+import SearchBar from '../components/searchbar-components';
+import InputComponents from '../components/input-components';
 
 
  
@@ -20,6 +22,8 @@ render(
 			</div>	
 			<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<RadioAndCheckbox/>
+				<SearchBar/>
+				<InputComponents/>
 			</div>	
 		</div>
 	</div>
